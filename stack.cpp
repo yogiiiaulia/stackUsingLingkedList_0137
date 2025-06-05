@@ -111,4 +111,9 @@ int main()
             cout << "Exiting program." << endl;
             break;
 
-        
+        default:
+        cout << "Invalid choice. try again." << endl;
+        break;
+        }
+       
+}
