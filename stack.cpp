@@ -46,14 +46,26 @@ public:
 
     void pop()
     {
-        if(isEmpty())
+        Node *temp = top;
+        if (isEmpty())
         {
-            cout << "Stack is Empty." << endl;
+            cout << " Stack is empty " << endl;
             return;
         }
-        cout << "Popped value : "  << top->data << endl;
-        top = top->next;
+        cout << "Popped value : " << temp->data << endl;
+        top = temp->next;
+        temp = nullptr; 
     }
+
+    //if(isEmpty())
+    //   {
+    //      cout << "Stack is Empty." << endl;
+    //        return;
+    //  }
+    //    cout << "Popped value : "  << top->data << endl;
+    //    top = top->next;
+
+    
 // peek/top operation: retrieve the value of the topmost element without removing it
     void peek()
     {
